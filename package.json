@@ -1,0 +1,25 @@
+{
+  "name": "projmanagement",
+  "version": "1.0.0",
+  "description": "a project management application for beginners",
+  "keywords": [
+    "udemy",
+    "course",
+    "backend",
+    "API",
+    "creation"
+  ],
+  "license": "ISC",
+  "author": "Mohammad Anas",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "prettier": "3.8.1"
+  },
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  }
+}
