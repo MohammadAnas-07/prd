@@ -29,6 +29,7 @@
     "jsonwebtoken": "^9.0.3",
     "mailgen": "^2.0.32",
     "mongoose": "^9.3.0",
-    "node-modules": "^1.0.1"
+    "node-modules": "^1.0.1",
+    "nodemailer": "^8.0.2"
   }
 }
