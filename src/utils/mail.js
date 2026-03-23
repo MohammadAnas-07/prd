@@ -14,14 +14,16 @@ const sendEmail = async (options)=>{
 
   const emailHtml = mailGenerator.generate(options.mailgenContent)
 
-  const transporter = nodemailer.createTransport({
-    host: process.env.MAILTRAP_SMTP_HOST,
-    port: process.env.MAILTRAP_SMTP_PORT,
-    auth: {
-      user: process.env.MAILTRAP_SMTP_USER,
-      pass: process.env.MAILTRAP_SMTP_PASS
-    }
-  })  
+ const transporter = nodemailer.createTransport({
+  host: process.env.MAILTRAP_SMTP_HOST,
+  port: Number(process.env.MAILTRAP_SMTP_PORT),
+  secure: false, // REQUIRED for 587
+  auth: {
+    user: process.env.MAILTRAP_SMTP_USER,
+    pass: process.env.MAILTRAP_SMTP_PASS
+  }
+})
+
 
   const mail = {
     from: "mail.taskmanager@example.com",
