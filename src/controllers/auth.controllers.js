@@ -51,7 +51,7 @@ const registerUser = asyncHandler(async (req, res)=>{
   {
     email:user?.email,
     subject: "Please verify your email",
-    mailgenContect: emailVerificationMailgenContent(
+    mailgenContent: emailVerificationMailgenContent(
       user.username,
       `${req.protocol}://${req.get("host")}/api/v1/users/verify-email/${unHashedToken}`
     )
